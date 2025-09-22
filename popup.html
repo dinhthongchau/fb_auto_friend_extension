@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FB Auto Friend</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 250px;
+            padding: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 95%;
+            padding: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #166fe5;
+        }
+
+        #status {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h3>Cấu hình Kết bạn</h3>
+
+    <div class="form-group">
+        <label for="limit">Giới hạn số người:</label>
+        <input type="number" id="limit" value="30" />
+    </div>
+
+    <div class="form-group">
+        <label for="delay">Thời gian chờ tối thiểu (giây):</label>
+        <input type="number" id="delay" value="3" />
+    </div>
+
+    <div class="form-group">
+        <label for="maxScrolls">Số lần cuộn tối đa khi không thấy người mới:</label>
+        <input type="number" id="maxScrolls" value="3" min="1" />
+    </div>
+
+    <button id="startButton">Bắt đầu</button>
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+    <script>/* Keep empty file fallback if blocked */</script>
+
+</body>
+
+</html>
